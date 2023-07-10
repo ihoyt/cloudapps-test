@@ -5,7 +5,7 @@ USER root
 # RUN adduser www-data 
 
 # RUN touch /usr/local/apache2/logs/httpd.pid
-RUN chown -hR www-data:www-data /usr/local/apache2/
+RUN sudo chown -hR www-data:www-data /usr/local/apache2/
 # RUN chmod -R 664 /usr/local/apache2/
 
 USER www-data
