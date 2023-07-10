@@ -1,7 +1,6 @@
 FROM httpd:alpine
 
-RUN apk add libcap && chown -hR www-data:www-data /usr/local/apache2/ && \
-  setcap 'cap_net_bind_service=+ep' /usr/local/apache2/bin/httpd
+RUN chown -hR www-data:www-data /usr/local/apache2/
 
 USER www-data
 
