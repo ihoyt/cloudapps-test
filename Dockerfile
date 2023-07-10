@@ -6,8 +6,8 @@ USER root
 
 # COPY . /var/www/html
 
-COPY . /usr/local/apache2/htdocs/
+COPY ./public-html/ /usr/local/apache2/htdocs/
 
-EXPOSE 8080
+# EXPOSE 8080
 
 # RUN a2enmod rewrite
