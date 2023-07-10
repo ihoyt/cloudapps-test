@@ -2,7 +2,8 @@ FROM httpd:alpine
 
 USER root
 
-RUN groupadd -r www-data && useradd --no-log-init -r -g www-data www-data
+RUN adduser www-data 
+
 # RUN touch /usr/local/apache2/logs/httpd.pid
 # RUN chown -hR www-data:www-data /usr/local/apache2/
 # RUN chmod -R 664 /usr/local/apache2/
