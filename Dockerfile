@@ -1,6 +1,6 @@
 FROM httpd:alpine
 
-USER root
+USER www-data
 
 # WORKDIR /var/www/html
 
