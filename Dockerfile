@@ -8,6 +8,6 @@ USER root
 
 COPY . /usr/local/apache2/htdocs/
 
-EXPOSE 80
+EXPOSE 8080
 
-RUN a2enmod rewrite
+# RUN a2enmod rewrite
