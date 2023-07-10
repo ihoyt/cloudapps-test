@@ -1,5 +1,7 @@
 FROM httpd:alpine
 
+USER root
+
 RUN chown -hR www-data:www-data /usr/local/apache2/
 
 USER www-data
