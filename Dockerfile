@@ -6,7 +6,8 @@ USER www-data
 
 # COPY . /var/www/html
 
-COPY ./public-html/ /usr/local/apache2/htdocs/
+# COPY ./public-html/ /usr/local/apache2/htdocs/
+COPY ./public-html/ /tmp/htdocs/
 
 # COPY ./my-httpd.conf /usr/local/apache2/conf/httpd.conf
 COPY ./my-httpd.conf /tmp/conf/httpd.conf
